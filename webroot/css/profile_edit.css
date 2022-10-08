@@ -1,0 +1,275 @@
+input[type="text"]:focus {
+    outline: 2px solid #5aa680;
+}
+
+textarea:focus {
+    outline: 2px solid #5aa680;
+}
+
+
+.profile-wrapper {
+    width: 960px;
+    padding-top: 40px;
+    margin: 0 auto 50px;
+    border-radius: 2px;
+    background: #36393F;
+}
+
+.profile-wrapper h2 {
+    padding-top: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.desc {
+    margin-bottom: 10px;
+}
+
+form {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    border-radius: 2px;
+}
+
+label {
+    width: 180px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+select {
+    font-size: 16px;
+}
+
+.upbtn_label {
+    position: relative;
+    border: none;
+    margin: 22px 20px;
+    padding: 2px;
+    border-radius: 2px;
+    max-width: 130px;
+    text-align: center;
+    display: block;
+    background-color: #666666;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+}
+
+.upbtn_label:hover {
+    background-color: #c6c6c6;
+}
+
+.upbtn_label:active {
+    top: 1px;
+}
+
+span {
+    font-size: 1rem;
+}
+
+input {
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 5px;
+    border: none;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 30px;
+}
+
+input[type="text"]:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.inner-row input[type="checkbox"],
+.inner-row input[type="radio"] {
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+}
+
+textarea {
+    font-size: 14px;
+    width: 450px;
+    border-radius: 2px;
+}
+
+.outher-row {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+
+.pubg-margin {
+    margin-right: 8px;
+}
+
+.lol-margin {
+    margin-right: 103px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.require-item {
+    color: red;
+    font-size: 12px;
+}
+
+.reg-btn-area {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.reg-btn {
+    position: relative;
+    font-size: 16px;
+    width: 250px;
+    height: 40px;
+    color: #fff;
+    background-color: #5AA682;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance: none;
+    /* iOSリセット */
+    border-radius: 0;
+    /* iOSリセット */
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.reg-btn:hover {
+    background-color: #6bc499;
+}
+
+.reg-btn:active {
+    top: 1px;
+}
+
+.ext-msg {
+    margin-left: 10px;
+    color: red;
+    line-height: 26px;
+    font-size: 12px;
+}
+
+.warning-msg {
+    font-size: 12px;
+}
+
+.err-msg {
+    margin-left: 10px;
+    color: red;
+    font-size: 12px;
+}
+
+/* Medium Screen */
+@media (max-width: 960px) {
+    .profile-wrapper {
+        width: 100vw;
+    }
+
+    form {
+        width: 100vw;
+    }
+
+    input[type="text"] {
+        display: block;
+    }
+
+    textarea {
+        width: 350px;
+    }
+
+}
+
+/* Small Screen */
+@media (max-width: 600px) {
+    .outher-row {
+        display: block;
+    }
+
+    .outher-row img {
+        display: block;
+        margin: 30px auto;
+    }
+
+    .warning-msg {
+        margin-left: 10px;
+    }
+
+    .upbtn_label {
+        display: block;
+        margin: 10px auto 20px;
+    }
+
+    .pubg-margin,
+    .lol-margin {
+        margin-left: 10px;
+    }
+
+    select {
+        display: block;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    textarea {
+        margin-left: 10px;
+        width: 70vw;
+        height: 400px;
+    }
+
+    .desc {
+        text-align: center;
+    }
+
+    input[type="radio"] {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    input[type="checkbox"] {
+        margin-left: 10px;
+        transform: scale(1.2);
+    }
+
+    input[type="text"] {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 70vw;
+        font-size: 12px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .reg-btn {
+        width: 150px;
+    }
+}

@@ -1,0 +1,310 @@
+/* common */
+section {
+    margin: 0 40px;
+}
+
+i {
+    margin-right: 7px;
+}
+
+.wrapper {
+    width: 1060px;
+    margin: 0 auto;
+    padding-top: 30px;
+    letter-spacing: 0.03em;
+}
+
+.pfheader {
+    position: relative;
+}
+
+.bgimg {
+    text-align: center;
+}
+
+.myimg {
+    position: absolute;
+    top: 170px;
+    left: 80px;
+}
+
+.bgimg {
+    opacity: 1;
+    transition: 1s;
+}
+
+.bgimg:hover {
+    opacity: 0.5;
+}
+
+.upload-msg {
+    position: absolute;
+    opacity: 0;
+    color: #aba;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mypic {
+    border-radius: 50%;
+}
+
+.chardisp {
+    opacity: 1;
+    transition: 1s;
+}
+
+.myName {
+    letter-spacing: 0.04em;
+    font-size: 2.3rem;
+    margin: 20px 20px 20px 50px;
+}
+
+.gameinfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gameinfo ul {
+    list-style: none;
+}
+
+.r6s,
+.pubg,
+.lol {
+    width: 320px;
+    margin: 5px 10px 5px 10px;
+    box-shadow: 0 1px 3px #0e0e0f;
+    border-radius: 2px;
+    position: relative;
+    min-height: 300px;
+}
+
+.r6sinfo,
+.pubginfo,
+.lolinfo {
+    padding: 5px;
+}
+
+.r6sinfo li,
+.pubginfo li,
+.lolinfo li {
+    margin: 10px 0 5px 0;
+}
+
+.label-deco {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    font-weight: normal;
+    border-radius: 2px 2px 0 0;
+    font-size: 0.9rem;
+}
+
+.rank-row {
+    text-align: center;
+}
+
+.csrank-deco {
+    font-size: 14px;
+    text-align: center;
+}
+
+.rank-deco {
+    color: #22bdb5;
+    font-weight: bold;
+    font-size: 24px;
+    border-bottom: 2px solid;
+    line-height: 28px;
+    text-align: center;
+}
+
+.char-deco {
+    font-size: 20px;
+    color: #0093ff;
+}
+
+.other-deco {
+    font-size: 14px;
+    text-align: center;
+}
+
+.mypf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content {
+    font-size: 14px;
+    padding: 10px 10px 10px 25px;
+    line-height: 24px;
+}
+
+.myintro,
+.mygoal,
+.mytournament,
+.myvalues,
+.myteam,
+.mydiscord,
+.myskype {
+    margin: 20px 10px 10px 10px;
+    box-shadow: 0 1px 3px #0e0e0f;
+    border-radius: 2px;
+}
+
+.myintro {
+    width: 100%;
+}
+
+.intro-label {
+    background-color: #764c5a;
+}
+
+.mydiscord,
+.myskype {
+    width: 460px;
+}
+
+.mygoal,
+.mytournament,
+.myvalues,
+.myteam {
+    width: 305px;
+}
+
+/* ラベル */
+.r6s-label,
+.myr6sgoal-label {
+    background-color: #494e6b;
+}
+
+.pubg-label,
+.mypubggoal-label {
+    background-color: #ce9848;
+}
+
+.lol-label,
+.mylolgoal-label {
+    background-color: #3496a3;
+}
+
+.values-label,
+.team-label,
+.tour-label {
+    background-color: #78a65b;
+}
+
+.discord-label {
+    background-color: #596dac;
+}
+
+.skype-label {
+    background-color: #069ecf;
+}
+
+.btnarea {
+    text-align: center;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.pfedit-btn {
+    position: relative;
+    font-size: 1rem;
+    width: 250px;
+    height: 40px;
+    color: #fff;
+    background-color: #666666;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: normal;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+}
+
+.pfedit-btn:hover {
+    background: #b4b4b4;
+}
+
+.pfedit-btn:active {
+    top: 1px;
+}
+
+.no-reg-msg {
+    font-size: 0.75rem;
+    width: 65vw;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.fa-exclamation-circle {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 47%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    font-size: 4rem;
+}
+
+/* small screen */
+@media (max-width: 600px) {
+    .wrapper {
+        width: 100vw;
+    }
+
+    .myimg {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .myName {
+        text-align: center;
+    }
+
+    .cover-img {
+        width: 100vw;
+        height: 312px;
+    }
+
+    section {
+        display: block !important;
+    }
+
+    .r6s,
+    .pubg,
+    .lol,
+    .mygoal,
+    .myintro,
+    .mytournament,
+    .myvalues,
+    .myteam,
+    .mydiscord,
+    .myskype {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+}
+
+/* midium screen */
+@media (min-width: 960px) {
+    .cover-img {
+        width: 960px;
+        height: 312px;
+    }
+}

@@ -1,0 +1,222 @@
+/* フッター */
+.footer {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #36393f;
+    color: #fff;
+}
+
+.before_msg a {
+    color: #4485aa;
+    text-decoration: none;
+}
+
+.before_msg a:visited {
+    color: #976777;
+}
+
+.modal_container {
+    width: 640px;
+    margin: 60px auto;
+    padding-top: 10px;
+    border-radius: 2px;
+    background: #36393f;
+    box-shadow: 2px 3px 14px #0e0e0f;
+    z-index: 2;
+    color: white;
+    position: fixed;
+    top: 70px;
+    left: calc(50vw - 320px);
+    height: 70vh;
+    overflow: scroll;
+    display: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 0 auto;
+    width: 95%;
+    border-bottom: 0.04em solid #bdc3c7;
+}
+
+.item {
+    position: relative;
+    width: 95%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: 0.04em solid #bdc3c7;
+}
+
+.before_msg {
+    position: absolute;
+    top: 15%;
+    left: 10px;
+    width: 420px;
+    font-size: 14px;
+}
+
+.after_msg {
+    position: absolute;
+    top: 55%;
+    left: 10px;
+    font-size: 14px;
+    width: 420px;
+}
+
+.permit_msg {
+    color: #5aa681;
+}
+
+.reject_msg {
+    color: #c0392b;
+}
+
+.modal_btn_area {
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+
+.btn_allow {
+    position: relative;
+    border: none;
+    width: 70px;
+    font-size: 14px;
+    padding: 3px;
+    margin-right: 10px;
+    border-radius: 2px;
+    color: #fff;
+    background: #5aa681;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn_deny {
+    position: relative;
+    border: none;
+    width: 70px;
+    font-size: 14px;
+    padding: 3px;
+    margin-right: 10px;
+    border-radius: 2px;
+    color: #fff;
+    background: #c0392b;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn_allow:disabled,
+.btn_deny:disabled {
+    background: #545454;
+    cursor: no-drop;
+}
+
+.btn_profile {
+    position: relative;
+    display: block;
+    text-align: center;
+    border: none;
+    width: 155px;
+    font-size: 14px;
+    padding: 3px;
+    margin-right: 10px;
+    border-radius: 2px;
+    color: #fff;
+    background: #2980b9;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.time {
+    position: absolute;
+    top: 76%;
+    right: 10px;
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.btn_close_area {
+    text-align: center;
+    padding: 30px;
+}
+
+.btn_close {
+    position: relative;
+    width: 155px;
+    background: #666666;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+
+.btn_allow:active,
+.btn_deny:active,
+.btn_profile:active,
+.btn_close:active {
+    top: 1px;
+}
+
+.btn_allow:hover {
+    background: #62b28a;
+}
+
+.btn_deny:hover {
+    background: #e74c3c;
+}
+
+.btn_allow:disabled:hover,
+.btn_deny:disabled:hover {
+    background: #545454;
+    cursor: no-drop;
+}
+
+.btn_profile:hover {
+    background: #3498db;
+}
+
+.btn_close:hover {
+    background: #b4b4b4;
+}
+
+@media (max-width: 600px) {
+    .modal_container {
+        width: 100vw;
+        left: 0;
+    }
+
+    .title {
+        font-size: 1.0rem;
+    }
+
+    .item {
+        height: 150px;
+    }
+
+    .modal_btn_area {
+        top: 70%;
+        left: 10px;
+    }
+
+    .before_msg {
+        width: 95vw;
+        top: 10%;
+    }
+
+    .after_msg {
+        width: 95vw;
+        top: 40%;
+    }
+
+    .btn_close {
+        width: 130px;
+        height: 40px;
+    }
+}

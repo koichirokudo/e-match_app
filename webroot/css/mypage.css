@@ -1,0 +1,180 @@
+/* common */
+i {
+    margin-right: 7px;
+}
+
+body {
+    background: #36393f;
+}
+
+li {
+    list-style: none;
+}
+
+.game_wrapper {
+    width: 1080px;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.game_wrapper h2 {
+    font-size: 1.6rem;
+    padding: 10px;
+}
+
+.game_wrapper h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+.pubg_title {
+    background-color: #ce9848;
+    padding-left: 10px;
+    border-radius: 4px 4px 0 0;
+}
+
+.lol_title {
+    background-color: #3496a3;
+    padding-left: 10px;
+    border-radius: 4px 4px 0 0;
+}
+
+.wrapper {
+    height: 390px;
+    box-shadow: 1px 5px 14px #0e0e0f;
+    margin-bottom: 40px;
+    border-radius: 2px;
+}
+
+.row {
+    width: 100%;
+    height: 225px;
+    padding: 20px 60px 0 60px;
+}
+
+.player {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: black;
+    background: #fff;
+}
+
+.player img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.player a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -999px;
+}
+
+.more {
+    width: 94%;
+    text-align: right;
+}
+
+.more a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.slick-prev {
+    left: 15px;
+}
+
+.slick-prev:before {
+    font-size: 2rem;
+    line-height: 1;
+    outline: 0;
+}
+
+.slick-next:before {
+    font-size: 2rem;
+    line-height: 1;
+    outline: 0;
+}
+
+.info-msg {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.data-failure {
+    line-height: 150px;
+}
+
+/* Medium Screen */
+@media (max-width: 960px) {
+    .game_wrapper {
+        width: 95vw;
+    }
+
+    .game_wrapper h2 {
+        font-size: 1.3rem;
+    }
+
+    .game_wrapper h3 {
+        font-size: 1rem;
+    }
+
+    .player img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .info-msg {
+        font-size: 1rem;
+    }
+}
+
+/* Small Screen */
+@media (max-width: 600px) {
+    .game_wrapper {
+        width: 100vw;
+    }
+
+    .wrapper {
+        width: 100vw;
+        height: 350px;
+        box-shadow: none;
+    }
+
+    .game_wrapper h2 {
+        font-size: 1rem;
+    }
+
+    .pubg_title {
+        border-radius: 0;
+    }
+
+    .lol_title {
+        border-radius: 0;
+    }
+
+    .info-msg {
+        font-size: 0.8rem;
+    }
+}

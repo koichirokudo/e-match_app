@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    font-family: "Varela Round", "Gill Sans", "Noto Sans JP", sans-serif;
+}
+
+body {
+    background: #36393f;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.outer {
+    text-align: left;
+}
+
+.outer h2 {
+    padding-top: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.inner {
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    border: solid 2px gray;
+    margin: 0 auto;
+}
+
+table th, table td {
+    border: dashed 1px gray;
+}
+
+table tr, table th, table td {
+    padding: 15px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.btn-area {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.reg-btn {
+    position: relative;
+    font-size: 16px;
+    width: 200px;
+    color: #fff;
+    background-color: #5aa682;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+}
+
+.reg-btn:hover {
+    background-color: #6bc499;
+}
+
+.reg-btn:active {
+    top: 1px;
+}
+
+.back-btn {
+    position: relative;
+    margin-left: 10px;
+    font-size: 16px;
+    width: 200px;
+    color: #000;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+}
+
+.back-btn:hover {
+    background-color: #fff;
+}
+
+.back-btn:active {
+    top: 1px;
+}
+
+.top-msg {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Medium Screen */
+@media (max-width: 960px) {
+    .outer {
+        width: 100vw;
+    }
+
+    .inner {
+        width: 100vw;
+    }
+
+    table tr, table th, table td {
+        padding: 5px;
+    }
+}
+
+/* Small Screen */
+@media (max-width: 640px) {
+    .reg-btn,
+    .back-btn {
+        width: 100px;
+    }
+
+    .last td:last-child {
+        border-bottom: solid 1px #ccc;
+        width: 100%;
+    }
+
+    .tbl-r02 {
+        width: 80%;
+    }
+
+    .tbl-r02 th,
+    .tbl-r02 td {
+        border-bottom: none;
+        display: block;
+        width: 100%;
+        /* border: solid 1px gray; */
+    }
+
+    .tbl-r02 th {
+        background: gray;
+    }
+}
