@@ -43,8 +43,8 @@ return [
              * the following line and set the port accordingly
              */
             //'port' => 'non_standard_port_number',
-            'username' => 'username', // development: admin
-            'password' => 'password', // development: admin
+            'username' => 'admin', // development: admin
+            'password' => 'admin', // development: admin
             'database' => 'e-match',  // development: e-match
             'log' => true,
             'url' => env('DATABASE_URL', null),
